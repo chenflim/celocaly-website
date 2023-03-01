@@ -9,40 +9,40 @@ body {
     flex-direction: column;
    }
 
-header.navbar-container{   
+.navbar-container{   
     padding-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-header.navbar-container .nav-tittle {
+.navbar-container .nav-tittle {
     display: flex;
     align-items: center;
 }
 
-header.navbar-container .nav-tittle h1{
+.navbar-container .nav-tittle h1{
     font-family: 'Chewy', cursive;
     font-size: 30px;
     color: #3C2A21;
 }
 
-header.navbar-container .nav-list ul {
+.navbar-container .nav-list ul {
     display: flex;
     justify-content: center;
     gap: 80px;
   }
 
-  header.navbar-container .nav-list li {
+.navbar-container .nav-list li {
     list-style-type: none;
   }
 
-  header.navbar-container .nav-list li:hover a {
+.navbar-container .nav-list li:hover a {
     background-color: #CFB997;
     color: #3C2A21;
   }
 
-  header.navbar-container .nav-list li a{
+.navbar-container .nav-list li a{
     text-decoration: none;
     color: #3C2A21;
     font-size: medium;
@@ -54,37 +54,36 @@ header.navbar-container .nav-list ul {
   }
   
 
-main {
+.landing-page {
     margin-inline:auto;
-    padding-left: 30px;
-    padding-right: 30px;
     flex: 1; 
     display: flex;
     align-items: center;
 }
 
-main .content {
-    flex: 1;
-    display: flex;
-    align-items: center;
-  }
+.landing-page .left-landingpage {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
-  main .content .content-description {
-    padding-right: 170px;
-    flex: 1 1;
+.landing-page .left-landingpage p{
+    
     font-family: 'Quicksand', sans-serif;
     font-size: 30px;
     color: #3C2A21;
-  }
+}
 
-  main .content .content-description .title {
-    padding: 0;
+.landing-page .left-landingpage h1{
     font-family: 'Chewy', cursive;
     font-size: 90px;
     color: #3C2A21;
+    padding: 0;
+    display: flex;
   }
 
-  main .content .content-description button {
+.landing-page .left-landingpage button {
     text-transform: uppercase;
     border: 15px solid transparent;
     border-radius: 99px;
@@ -92,16 +91,16 @@ main .content {
     color: #3C2A21;
   }
 
-  main .content .content-image {
+.landing-page .right-landingpage {
     padding-left: 170px;
     flex: 1;
     display: flex;
     align-items: center;
   }
    
-  main .content .content-image img {
+.landing-page .right-landingpage img {
     margin: auto;
     min-width: 250px;
     width: 350px;
     border-radius: 50%;
-  }
+}
