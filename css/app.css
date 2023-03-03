@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Chewy&family=Quicksand:wght@500;700&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Quicksand', sans-serif;
   margin: 0;
@@ -133,6 +137,8 @@ main {
 
 #content {
   flex-basis: 75%;
+  border: 3px solid #D9D9D9;
+  border-radius: 16px;
 }
 
 aside {
@@ -145,7 +151,6 @@ aside {
 article {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  padding-left: 66px;
 }
 
 .article-header h2 {
@@ -154,6 +159,10 @@ article {
   font-size: 50px;
   text-align: center;
   color: #3C2A21;
+}
+
+.article-header {
+  text-align: center;
 }
 
 .card-content p {
@@ -169,9 +178,11 @@ article {
   justify-content: space-evenly;
 }
 
+article .card {
+  padding-top: 40px;
+}
+
 .card .card-content img {
-  margin-bottom: 40px;
-  margin-top: 40px;
   height: 250px;
   border-radius: 15%;
 }
@@ -226,28 +237,34 @@ footer {
  
   main aside {
     margin-bottom: 36px;
+    margin-top: 36px;
   }
 
   .landing-page {
     flex-direction: column;
-    
+    padding-top: 2rem;
   }
 
   .right-landingpage {
     order: -1;
+    margin: auto;
+  }
+  
+  .left-landingpage {
+    padding-left: 16px;
   }
 
   .card {
     flex-direction: column;
-    
-    padding: 0;
+    align-items: center;
   }
 
   .navbar-container {
     flex-direction: column;
   }
 
-
- 
+  #content {
+    border: none;
+  }
 
 }
