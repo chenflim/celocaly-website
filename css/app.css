@@ -20,6 +20,7 @@ header {
   margin-inline: auto;
 }
 
+/* Header */
 .navbar-container {
   padding-top: 20px;
   display: flex;
@@ -64,6 +65,7 @@ header {
   transition: all .2s ease-in-out;
 }
 
+/* Landing Page */
 
 .landing-page {
   display: flex;
@@ -81,7 +83,7 @@ header {
   font-family: 'Quicksand', sans-serif;
   font-size: 30px;
   color: #3C2A21;
-}
+  }
 
 .landing-page .left-landingpage h1 {
   font-family: 'Chewy', cursive;
@@ -116,12 +118,14 @@ header {
 
 .landing-page .right-landingpage img {
   margin: auto;
-  min-width: 250px;
   width: 330px;
   border-radius: 50%;
 }
 
-/* Ganti display ke flex dan menggunakan flex-basis */
+.landing-page .right-landingpage img:hover{
+  transform: scale(1.15) ;
+}
+
 main {
   padding: 20px;
   display: flex;
@@ -133,18 +137,18 @@ main {
 
 aside {
   flex-basis: 25%;
-  padding-left: 20px;
+  
 }
 
 /* Article Cosplay */
 
-#cosplay {
+article {
   padding-top: 4rem;
   padding-bottom: 4rem;
-  margin-left: 65px;
+  padding-left: 66px;
 }
 
-#cosplay h2 {
+.article-header h2 {
   margin: 0;
   font-family: 'Chewy', cursive;
   font-size: 50px;
@@ -152,28 +156,7 @@ aside {
   color: #3C2A21;
 }
 
-#cosplay p {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 20px;
-  color: #3C2A21;
-}
-
-#cosplan {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-left: 65px;
-}
-
-#cosplan h2 {
-  margin: 0;
-  font-family: 'Chewy', cursive;
-  font-size: 50px;
-  text-align: center;
-  color: #3C2A21;
-}
-
-#cosplan p {
+.card-content p {
   text-align: center;
   margin-bottom: 50px;
   font-size: 20px;
@@ -186,29 +169,22 @@ aside {
   justify-content: space-evenly;
 }
 
-.card .card-right img {
+.card .card-content img {
   margin-bottom: 40px;
   margin-top: 40px;
   height: 250px;
   border-radius: 15%;
 }
 
-.card .card-left img {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  height: 250px;
-  border-radius: 15%;
+.card .card-content:hover {
+  transform: scale(1.15);
 }
 
-.card .card-center img {
-  margin-bottom: 40px;
-  margin-top: 40px;
-  height: 250px;
-  border-radius: 15%;
-}
+
+/* Aside */
 
 .profile header {
-  padding: 25px 20px 200px;
+  padding: 36px;
   text-align: center;
   color: #3C2A21;
   border-radius: 5%;
@@ -228,8 +204,9 @@ aside {
   object-fit: cover;
 }
 
+
 footer {
-  padding: 20px;
+  padding: 30px;
   color: #3C2A21;
   background-color: #CFB997;
   text-align: center;
@@ -238,4 +215,39 @@ footer {
 
 * {
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 0;
+    
+    flex-direction: column;
+  }
+ 
+  main aside {
+    margin-bottom: 36px;
+  }
+
+  .landing-page {
+    flex-direction: column;
+    
+  }
+
+  .right-landingpage {
+    order: -1;
+  }
+
+  .card {
+    flex-direction: column;
+    
+    padding: 0;
+  }
+
+  .navbar-container {
+    flex-direction: column;
+  }
+
+
+ 
+
 }
